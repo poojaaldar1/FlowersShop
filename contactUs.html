@@ -3,20 +3,36 @@
 
 <head>
     <title> Contact Us </title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: rgb(238, 204, 222);
+            background-color: rgb(230, 209, 220);
+            background: url(Flower\ 1.jpg);
+            background-size: cover;
+            font-family: 'Sofia', cursive;
         }
 
         h3 {
             padding: 10px 10px 10px 10px;
-            background-color: orchid;
+            background-color: rgb(233, 162, 230);
+            font-size: x-large;
+            border: 10px;
+            text-shadow: 4px 3px 2px dimgray;
+
         }
 
         label {
             color: darkmagenta;
             font-weight: bold;
+            font-size: larger;
+        }
+
+        option {
+            color: darkmagenta;
+            font-weight: bold;
+            font-size: larger;
         }
 
         input[type="text"],
@@ -31,64 +47,106 @@
             text-transform: capitalize;
         }
 
-        h3:hover {
-            color: darkblue;
+        textarea,
+        option {
+            column-rule-color: coral;
+            border: 1px solid brown;
+            border-radius: 10px;
+            width: 300px;
+            height: 50px;
+            background-color: rgb(241, 174, 210);
+            text-transform: capitalize;
         }
 
-        input[type="submit"] {
+        input[type="submit"],
+        input[type="reset"] {
             background-color: deeppink;
             width: 80px;
             height: 30px;
             border-radius: 10px;
+            margin-top: 50px;
         }
-        
     </style>
 </head>
-   
+
 <body>
     <form>
         <h3> Contact Us </h3>
         <table>
             <tbody>
+                <ul>
 
-                <tr>
-                    <td> <label> Full Name </label> </td>
-                    <td> <input type="text" placeholder="Full Name Required"></td>
-                </tr>
+                    <tr>
+                        <td> <label> Full Name </label> </td>
+                        <td> <input type="text" placeholder="Full Name Required"></td>
+                    </tr>
 
-                <tr>
-                    <td> <label> Contact Number </label></td>
-                    <td> <input type="number" placeholder="Only Numbers"></td>
-                </tr>
+                    <tr>
+                        <td> <label> Contact Number </label></td>
+                        <td> <input type="number" placeholder="Only Numbers"></td>
+                    </tr>
 
-                <tr>
-                    <td><label>Email ID </label></td>
-                    <td><input type="email"></td>
-                </tr>
+                    <tr>
+                        <td><label>Email ID </label></td>
+                        <td><input type="email"></td>
+                    </tr>
 
-                <tr>
-                    <td><label> Current Address </label></td>
-                    <td><textarea rows="8" cols="25"> </textarea></td>
-                </tr>
+                    <tr>
+                        <td><label> Current Address </label></td>
+                        <td><textarea rows="8" cols="25"> </textarea></td>
+                    </tr>
 
-                <tr>
-                    <td> <label> Delivery Address </label></td>
-                    <td><textarea rows="8" cols="25"></textarea></td>
-                </tr>
+                    <tr>
+                        <td> <label> Delivery Address </label></td>
+                        <td><textarea rows="8" cols="25"></textarea></td>
+                    </tr>
 
-                <tr>
-                    <td><label> Description </label></td>
-                    <td><textarea rows="8" cols="25"></textarea></td>
-                </tr>
+                    <tr>
+                        <td><label> Description </label></td>
+                        <td><textarea rows="8" cols="25"></textarea></td>
+                    </tr>
 
+                    <tr>
+                        <td><label> Favourite Colour</label></td>
+                        <td><select>
+                                <option> Red </option>
+                                <option> Pink </option>
+                                <option> Blue </option>
+                                <option> White </option>
+                                <option> Purple </option>
+                                <option> Yellow </option>
+                                <option> Brown </option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label> Flower Type </label>
+                        </td>
+                        <td> <input type="radio" name="Flower"><label> Rose </label>
+                            <input type="radio" name="Flower"><label> Lily </label>
+                            <input type="radio" name="Flower"><label> Orchid </label>
+                            <input type="radio" name="Flower"><label> Tulip </label>
+                            <input type="radio" name="Flower"><label> Carnation </label>
+                            <input type="radio" name="Flower"><label> Lotus </label>
+                            <input type="radio" name="Flower"><label> Lotus </label>
+                        </td>
+                    </tr>
+                </ul>
                 <tr>
                     <td> <input type="submit"> </td>
+                    <td> <input type="reset"> </td>
                 </tr>
 
             </tbody>
         </table>
-       
+
     </form>
+    <br>
+    <marquee direction="left" width="400px" height="30px" behaviour="scrolling">
+        Thank You For Visiting Us...!!!!
+    </marquee>
 
 </body>
 
