@@ -6,16 +6,45 @@
 
     <style>
         body {
-            background-color: rgb(240, 181, 211);
+            background-color: rgb(238, 204, 222);
         }
 
         h3 {
             padding: 10px 10px 10px 10px;
             background-color: orchid;
-                    }
+        }
+
+        label {
+            color: darkmagenta;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"] {
+            column-rule-color: coral;
+            border: 1px solid brown;
+            border-radius: 10px;
+            width: 200px;
+            height: 20px;
+            background-color: rgb(241, 174, 210);
+            text-transform: capitalize;
+        }
+
+        h3:hover {
+            color: darkblue;
+        }
+
+        input[type="submit"] {
+            background-color: deeppink;
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+        }
+        
     </style>
 </head>
-
+   
 <body>
     <form>
         <h3> Contact Us </h3>
@@ -29,7 +58,7 @@
 
                 <tr>
                     <td> <label> Contact Number </label></td>
-                    <td> <input type="number"></td>
+                    <td> <input type="number" placeholder="Only Numbers"></td>
                 </tr>
 
                 <tr>
@@ -39,17 +68,17 @@
 
                 <tr>
                     <td><label> Current Address </label></td>
-                    <td><textarea rows="10" cols="30"> </textarea></td>
+                    <td><textarea rows="8" cols="25"> </textarea></td>
                 </tr>
 
                 <tr>
                     <td> <label> Delivery Address </label></td>
-                    <td><textarea rows="10" cols="30"></textarea></td>
+                    <td><textarea rows="8" cols="25"></textarea></td>
                 </tr>
 
                 <tr>
                     <td><label> Description </label></td>
-                    <td><textarea rows="10" cols="30"></textarea></td>
+                    <td><textarea rows="8" cols="25"></textarea></td>
                 </tr>
 
                 <tr>
@@ -58,6 +87,7 @@
 
             </tbody>
         </table>
+       
     </form>
 
 </body>
