@@ -20,7 +20,6 @@
             font-size: x-large;
             border: 10px;
             text-shadow: 4px 3px 2px dimgray;
-
         }
 
         label {
@@ -29,10 +28,13 @@
             font-size: larger;
         }
 
-        option {
-            color: darkmagenta;
+        input[type="option"] select {
             font-weight: bold;
             font-size: larger;
+            background-color: darkmagenta;
+            border-radius: 10px;
+            width: 200px;
+            height: 20px;
         }
 
         input[type="text"],
@@ -48,7 +50,7 @@
         }
 
         textarea,
-        option {
+        select {
             column-rule-color: coral;
             border: 1px solid brown;
             border-radius: 10px;
